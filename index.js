@@ -4,8 +4,6 @@ let high = document.querySelector('#high');
 let low = document.querySelector('#low');
 let selectbar = document.querySelector('#selectbar')
  
-
-
 let allli = document.getElementsByTagName('li');
 console.log(allli)
 
@@ -13,6 +11,12 @@ console.log(allli)
 high.addEventListener('click', highred)
 
 function highred (){
+
+    if( inputbarid.value == ""){
+        alert('InputField can be empty')
+    }
+
+    else{
     let x = inputbarid.value;
 
     let newlired = document.createElement('li');
@@ -24,11 +28,17 @@ function highred (){
     inputbarid.value = ""
     console.log(allli)
 }
+}
 
 
 low.addEventListener('click', lowgreen)
 
 function lowgreen (){
+    if( inputbarid.value == ""){
+        alert('InputField can be empty')
+    }
+
+    else{
     let x = inputbarid.value;
 
     let newlired = document.createElement('li');
@@ -38,14 +48,11 @@ function lowgreen (){
     tasklist.appendChild(newlired)
 
     inputbarid.value = ""
-    console.log(allli)
+    console.log(allli);
+    }
 }
 
-imptask.addEventListener('click', hideunimportant)
-
-function hideunimportant (e){
-    
-}
+ 
 
 
 
