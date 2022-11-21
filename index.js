@@ -3,7 +3,7 @@ let tasklist = document.querySelector('#tasklist');
 let high = document.querySelector('#high');
 let low = document.querySelector('#low');
 let selectbar = document.querySelector('#selectbar')
-let imptask = document.querySelector('#imptask');
+ 
 
 
 let allli = document.getElementsByTagName('li');
